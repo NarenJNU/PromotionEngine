@@ -27,7 +27,7 @@ namespace PromotionEngine
             }
         }
 
-        public int GetResult()
+        public int GetFinalResultAfterAppliedPromotion()
         {
             int result = 0;
             foreach (var promotion in this.input.ActivePromotions)
