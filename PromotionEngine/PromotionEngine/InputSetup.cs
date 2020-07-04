@@ -5,8 +5,7 @@ using System.Text;
 namespace PromotionEngine
 {
     public class InputSetup
-    {
-        
+    { 
         private bool isSkuInitialized = false;
 
         private bool isPromotionsInitialized = false;
@@ -43,9 +42,9 @@ namespace PromotionEngine
 
             this.activePromotions.Add(new ActivePromotion
             {
-                Ids = new List<Promotion>()
+                Ids = new Dictionary<string, int>()
                 {
-                    new Promotion{Id = "A", quantity = 3}
+                    {"A", 3}
                 },
 
                 offerPrice = 130
@@ -53,9 +52,9 @@ namespace PromotionEngine
 
             this.activePromotions.Add(new ActivePromotion
             {
-                Ids = new List<Promotion>()
+                Ids = new Dictionary<string, int>()
                 {
-                    new Promotion{Id = "B", quantity = 2}
+                    {"B",  2}
                 },
 
                 offerPrice = 45
@@ -63,10 +62,10 @@ namespace PromotionEngine
 
             this.activePromotions.Add(new ActivePromotion
             {
-                Ids = new List<Promotion>()
+                Ids = new Dictionary<string, int>()
                 {
-                    new Promotion{Id = "C", quantity = 1},
-                    new Promotion{Id = "D", quantity = 1},
+                    {"C", 1},
+                    {"D", 1},
                 },
                 offerPrice = 30
             });

@@ -6,7 +6,7 @@ namespace PromotionEngine
 {
     public class ActivePromotion
     {
-        public List<Promotion> Ids;
+        public Dictionary<string, int> Ids;
 
         public int offerPrice;
     }
